@@ -10,7 +10,7 @@
                 <ul v-for="(item, i) in menuList" :key="i">
                   <li v-for="(sub, j) in item" :key="j">
                     <!-- 这里感觉最好不存在也给个页面 -->
-                    <a d:href="sub ? '/#/product/' + sub.id : ''">
+                    <a :href="sub ? '/#/product/' + sub.id : ''">
                       <img
                         :src="sub ? sub.img : '/imgs/item-box-1.png'"
                         alt=""
